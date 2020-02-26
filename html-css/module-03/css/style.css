@@ -103,7 +103,7 @@ section {
 .button {
   display: block;
   margin: auto;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
   padding: 21px 33px;
   border-width: 1px;
   border-color: rgb(98, 98, 98);
