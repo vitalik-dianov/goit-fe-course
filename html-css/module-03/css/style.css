@@ -59,6 +59,7 @@ body {
 
 section {
   font-size: 0;
+  padding-bottom: 55px
 }
 
 .article:nth-child(even) {
@@ -103,7 +104,6 @@ section {
 .button {
   display: block;
   margin: auto;
-  padding-bottom: 55px;
   padding: 21px 33px;
   border-width: 1px;
   border-color: rgb(98, 98, 98);
