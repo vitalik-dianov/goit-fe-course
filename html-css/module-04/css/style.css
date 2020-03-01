@@ -23,7 +23,12 @@
 
 header {
   padding-top: 26px;
-  margin-bottom: 103px;
+  margin-bottom: 65px;
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 /* Logo */
 .logo {
@@ -36,6 +41,7 @@ header {
   text-transform: uppercase;
   font-weight: 300;
   line-height: 1.067;
+  text-decoration: none;
 }
 .logo::first-letter {
   color: #1abc9c;
@@ -75,8 +81,10 @@ header {
   text-transform: uppercase;
   line-height: 0.786;
 }
-.menu-link:hover,.menu-link:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #1abc9c;
+  outline: none;
 }
 
 /* Featured Products */
@@ -90,20 +98,24 @@ header {
   font-family: Roboto, sans-serif;
   font-weight: 900;
   margin: 0 auto;
+  margin-bottom: 90px;
 }
 
 .title::after {
   content: "";
   display: block;
-  margin: 30px auto 100px;
+  margin: 30px auto 0px;
   width: 167px;
   height: 7px;
   background-color: #1abc9c;
 }
 .product-list {
+  margin: 0;
   padding-inline-start: 0;
 }
 .product-item {
+  width: 100%;
+  max-width: 255px;
   float: left;
   font-size: 0;
   margin: 0 30px 30px 0;
@@ -112,16 +124,25 @@ header {
 .product-item:nth-child(4n) {
   margin-right: 0;
 }
+.product-item:nth-last-child(-n + 4) {
+  margin-bottom: 0;
+}
 
 .product-item:hover .item-name {
-  background-color:#1abc9c;
+  background-color: #1abc9c;
 }
 .product-item:hover .item-price {
-  background-color:#7fd9c7;
+  background-color: #7fd9c7;
 }
-.item-info {
-  list-style: none;
-  padding-inline-start: 0;
+.item-link:focus .item-name {
+  background-color: #1abc9c;
+}
+.item-link:focus .item-price {
+  background-color: #7fd9c7;
+}
+.item-link {
+  display: block;
+  text-decoration: none;
 }
 .item-name {
   box-sizing: border-box;
@@ -158,6 +179,7 @@ header {
 .news {
   padding-inline-start: 0;
   list-style: none;
+  margin: 0;
 }
 
 .news-item {
@@ -170,6 +192,11 @@ header {
   margin-right: 0;
 }
 
+.news-img {
+  width: 100%;
+  max-width: 350px;
+  height: 265px;
+}
 .news-title {
   margin: 0;
   margin-top: 15px;
@@ -178,11 +205,11 @@ header {
   color: rgb(85, 82, 82);
   font-weight: 600;
   line-height: 1.444;
+  margin-bottom: 30px;
 }
 .news-title::after {
   content: "";
   margin-top: 15px;
-  margin-bottom: 30px;
   display: block;
   width: 136px;
   height: 3px;
@@ -200,6 +227,8 @@ header {
 }
 
 .news-button {
+  display: block;
+  box-sizing: border-box;
   border: none;
   border-radius: 3px;
   background-color: rgb(78, 198, 171);
@@ -209,4 +238,12 @@ header {
   font-size: 16px;
   color: rgb(255, 255, 255);
   text-align: center;
+  text-decoration: none;
+  padding: 16px 0;
+}
+.news-button:hover,
+.news-button:focus {
+  background-color: #7fd9c7;
+  color: #f5f5f5;
+  outline: none;
 }
