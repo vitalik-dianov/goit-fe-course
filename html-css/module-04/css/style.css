@@ -1,0 +1,212 @@
+/* * {
+  outline: red solid 1px;
+} */
+
+.wrapper {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container_nav {
+  width: 100%;
+  max-width: 467px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  padding-top: 26px;
+  margin-bottom: 103px;
+}
+/* Logo */
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #555252;
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.067;
+}
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+/* Navigation */
+
+.nav {
+  float: right;
+}
+
+.nav-menu {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 30px;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #0f0101;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.786;
+}
+.menu-link:hover,.menu-link:focus {
+  color: #1abc9c;
+}
+
+/* Featured Products */
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #515151;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  margin: 30px auto 100px;
+  width: 167px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+.product-list {
+  padding-inline-start: 0;
+}
+.product-item {
+  float: left;
+  font-size: 0;
+  margin: 0 30px 30px 0;
+  list-style: none;
+}
+.product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-item:hover .item-name {
+  background-color:#1abc9c;
+}
+.product-item:hover .item-price {
+  background-color:#7fd9c7;
+}
+.item-info {
+  list-style: none;
+  padding-inline-start: 0;
+}
+.item-name {
+  box-sizing: border-box;
+  float: left;
+  width: 199px;
+  text-align: left;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  background-color: #323232;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.item-price {
+  float: right;
+  margin: 0;
+  text-align: right;
+  padding: 12px;
+  background-color: #8c8c8c;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Latets News */
+
+.news {
+  padding-inline-start: 0;
+  list-style: none;
+}
+
+.news-item {
+  float: left;
+  margin-right: 30px;
+  width: 100%;
+  max-width: 350px;
+}
+.news-item:last-child {
+  margin-right: 0;
+}
+
+.news-title {
+  margin: 0;
+  margin-top: 15px;
+  font-size: 18px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(85, 82, 82);
+  font-weight: 600;
+  line-height: 1.444;
+}
+.news-title::after {
+  content: "";
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+}
+
+.news-text {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+  color: rgb(85, 82, 82);
+  line-height: 1.857;
+}
+
+.news-button {
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(78, 198, 171);
+  width: 160px;
+  height: 51px;
+  font-family: "OpenSans", sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
