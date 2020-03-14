@@ -1,0 +1,358 @@
+/* HELPERS */
+
+body {
+  margin: 0;
+  background-color: #e9f0fd;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.container_nav {
+  width: 100%;
+  max-width: 467px;
+}
+
+/* На случай если css не загрузиться */
+.hidden-mean {
+  display: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+header {
+  position: relative;
+  height: 90px;
+  width: 100%;
+
+  background-color: #fff;
+}
+header > div.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.section {
+  padding-top: 90px;
+  padding-bottom: 100px;
+}
+
+.icon_size {
+  line-height: 50px;
+  font-size: 37px;
+}
+
+/* LOGO */
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  color: #555252;
+  font-size: 30px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.067;
+  text-decoration: none;
+}
+.logo::first-letter {
+  color: #1abc9c;
+  font-weight: 900;
+}
+
+/* NAVIGATE */
+
+.nav {
+  float: right;
+}
+
+.nav-menu {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 13px;
+  list-style: none;
+}
+
+.menu-item {
+  float: left;
+  margin-right: 30px;
+}
+.menu-item:last-child {
+  margin-right: 0;
+}
+
+.menu-link {
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #0f0101;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "open sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 0.786;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #1abc9c;
+  outline: none;
+}
+
+/* SLIDER */
+
+section.slider {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1600px;
+  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)),
+    url(/img/slider.jpg);
+  color: #fff;
+  font-size: 0;
+  text-transform: uppercase;
+}
+div.slider {
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-link {
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  background-color: #1abc9c;
+  opacity: 0.651;
+  line-height: 104px;
+  font-size: 104px;
+  color: #fff;
+}
+/* .previus, .next {
+  font-size: 104px;
+} */
+
+.slider-link:hover, .slider-link:focus {
+  opacity: 1;
+}
+.slider-title {
+  display: block;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.367;
+  letter-spacing: -1px;
+  margin: 0 auto;
+}
+
+.slider-text {
+  display: inline-block;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 1.367;
+  margin: 0 auto;
+}
+
+/* FEATURED PRODUCTS */
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  color: #515151;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  margin: 30px auto 0px;
+  width: 167px;
+  height: 7px;
+  background-color: #1abc9c;
+}
+.product-list {
+  margin: 0;
+  padding-inline-start: 0;
+}
+img {
+  display: block;
+}
+.product-item {
+  width: 100%;
+  max-width: 255px;
+  float: left;
+
+  margin: 0 30px 0 0;
+  list-style: none;
+}
+.product-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.product-item:hover .item-name {
+  transition: 0.35s;
+  background-color: #1abc9c;
+}
+.product-item:hover .item-price {
+  transition: 0.35s;
+  background-color: #7fd9c7;
+}
+.item-link:focus .item-name {
+  transition: 0.35s;
+  background-color: #1abc9c;
+}
+.item-link:focus .item-price {
+  transition: 0.35s;
+  background-color: #7fd9c7;
+}
+.item-name {
+  box-sizing: border-box;
+  float: left;
+  width: 200px;
+  text-align: left;
+  margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  background-color: #323232;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.item-price {
+  float: right;
+  margin: 0;
+  box-sizing: border-box;
+  text-align: right;
+  width: 55px;
+  padding: 12px;
+  background-color: #8c8c8c;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* OVERLAY */
+
+.overlay-bg {
+  position: absolute;
+  box-sizing: border-box;
+  width: 255px;
+  height: 262px;
+  border-width: 10px;
+  border-color: rgb(255, 255, 255);
+  border-style: solid;
+  background-color: rgb(0, 0, 0);
+  opacity: 0;
+}
+.overlay {
+  width: 255px;
+  height: 262px;
+  position: absolute;
+  box-sizing: border-box;
+}
+/* При наведении на карточку проявляеться фон */
+.product-item:hover .overlay-bg {
+  opacity: 0.549;
+  transition: 0.35s;
+}
+
+/* При наведении на карточку ссылки становяться непрозрачными */
+.product-item:hover .overlay-item {
+  opacity: 1;
+  transition: 0.35s;
+}
+
+.overlay-list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  padding-inline-start: 0;
+  font-size: 0;
+}
+
+.overlay-item {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  opacity: 0;
+}
+
+.overlay-item:nth-child(3n) {
+  margin-right: 0;
+}
+.overlay-item:nth-child(4n) {
+  width: 166px;
+  margin: 0;
+  background-color: #323232;
+}
+/* При наведении на кнопку меняеться цвет */
+.overlay-item:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+  transition: 0.35s;
+}
+.overlay-link {
+  text-transform: uppercase;
+  line-height: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-buy {
+  font-size: 14px;
+  font-family: "OpenSans", sans-serif;
+  text-transform: uppercase;
+  line-height: 2.286;
+  text-align: center;
+}
+
+
+.footer {
+  background-color: #323232;
+  height: 90px;
+}
+.copy {
+  margin: 0;
+  font-size: 16px;
+  font-family: "OpenSans", sans-serif;
+  color: #fff;
+  line-height: 90px;
+  text-align: center;
+}
+.designer_name {
+  color: #46bfa9;
+}
