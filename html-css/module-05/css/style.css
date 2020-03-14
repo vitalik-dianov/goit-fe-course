@@ -119,7 +119,7 @@ section.slider {
   max-width: 1600px;
   height: 600px;
   background: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.522)),
-    url(/img/slider.jpg);
+    url(../img/slider.jpg);
   color: #fff;
   font-size: 0;
   text-transform: uppercase;
@@ -140,12 +140,14 @@ div.slider {
   font-size: 104px;
   color: #fff;
 }
-/* .previus, .next {
-  font-size: 104px;
-} */
+
 
 .slider-link:hover, .slider-link:focus {
   opacity: 1;
+}
+.widget {
+  display: inline-block;
+  padding: 0 80px;
 }
 .slider-title {
   display: block;
