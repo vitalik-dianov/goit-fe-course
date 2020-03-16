@@ -1,8 +1,14 @@
 /* HELPERS */
+/* Сброс стилей кнопок */
+/* button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit; */
 
 body {
   margin: 0;
-  background-color: #e9f0fd;
+  /* background-color: #e9f0fd; */
 }
 .wrapper {
   width: 100%;
@@ -10,12 +16,15 @@ body {
   padding: 0 15px;
   margin: 0 auto;
   box-sizing: border-box;
+  /* background-color: #e9f0fd; */
 }
-
-.container_nav {
+main {
+  background-color: #e9f0fd;
+}
+/* .container_nav {
   width: 100%;
-  max-width: 467px;
-}
+  min-width: 320px;
+} */
 
 /* На случай если css не загрузиться */
 .hidden-mean {
@@ -29,18 +38,20 @@ body {
 }
 
 header {
-  position: relative;
-  height: 90px;
-  width: 100%;
-
-  background-color: #fff;
+  display: block;
+  /* box-sizing: content-box; */
+  padding: 45px 0;
+  /* position: relative; */
+  /* height: 90px; */
+  /* width: 100%; */
+  /* background-color: #fff; */
 }
-header > div.wrapper {
+/* header > div.wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .section {
   padding-top: 90px;
@@ -130,7 +141,7 @@ div.slider {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.slider-link {
+.slider-btn {
   display: inline-block;
   width: 104px;
   height: 104px;
@@ -139,10 +150,12 @@ div.slider {
   line-height: 104px;
   font-size: 104px;
   color: #fff;
+  padding: 0;
+  border: none;
 }
 
 
-.slider-link:hover, .slider-link:focus {
+.slider-btn:hover, .slider-btn:focus {
   opacity: 1;
 }
 .widget {
@@ -331,7 +344,10 @@ img {
   text-transform: uppercase;
   line-height: 1;
   color: #fff;
+  background-color: rgba(0, 0, 0, 0);
   text-decoration: none;
+  padding: 0;
+  border: none;
 }
 
 .btn-buy {
