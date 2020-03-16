@@ -340,7 +340,7 @@ img {
   border: 1px solid #1abc9c;
   transition: 0.35s;
 }
-.overlay-link {
+.overlay-btn {
   text-transform: uppercase;
   line-height: 1;
   color: #fff;
