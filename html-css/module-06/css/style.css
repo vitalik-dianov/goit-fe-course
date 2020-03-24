@@ -31,6 +31,7 @@
 .header-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: baseline;
 }
 .hidden-mean {
@@ -49,6 +50,7 @@
 .nav-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-inline-start: 0;
   list-style: none;
 }
@@ -171,6 +173,7 @@
 .members-list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .members-card {
@@ -289,6 +292,7 @@
 .footer-inner {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-top: 1px solid #e5e5e5;
 }
 
@@ -307,6 +311,7 @@
 .form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 10px 0;
 }
 .input-info {
