@@ -37,6 +37,10 @@
 .hidden-mean {
   display: none;
 }
+
+a {
+  display: block;
+}
 /* HEADER */
 
 .logo {
@@ -55,7 +59,7 @@
   list-style: none;
 }
 .nav-item {
-  padding-right: 55px;
+  margin-right: 55px;
 }
 .nav-item:last-child {
   padding-right: 0;
@@ -98,7 +102,7 @@
   text-transform: uppercase;
   line-height: 1.2;
   text-align: center;
-  padding-bottom: 65px;
+  margin-bottom: 65px;
 }
 .section-subtitle {
   display: block;
@@ -127,8 +131,18 @@
 }
 
 .service-item {
+  display: flex;
+  flex-wrap: wrap;
   width: 381px;
   padding-bottom: 100px;
+}
+.service-item::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .service-item:nth-child(3n + 1) {
   margin-left: 10px;
@@ -142,6 +156,27 @@
   height: 32px;
   padding: 0 28px 0 20px;
 }
+
+.icon-alarm::before {
+background-image: url(../img/icons/ALARM.png);
+
+}
+.icon-line_graph::before {
+  background-image: url(../img/icons/LINE\ GRAPH.png);
+}
+.icon-computer_ok::before {
+  background-image: url(../img/icons/COMPUTER\ _\ OK.png);
+}
+.icon-book::before {
+  background-image: url(../img/icons/BOOK\ 2.png);
+}
+.icon-home::before {
+  background-image: url(../img/icons/HOME.png);
+}
+.icon-image::before {
+  background-image: url(../img/icons/IMAGE.png);
+}
+
 .service-title {
   font-family: "montserrat", sans-serif;
   font-size: 14px;
@@ -149,6 +184,7 @@
   text-transform: uppercase;
   color: #333;
   padding-bottom: 20px;
+  padding-left: 47px;
 }
 .service-text {
   font-size: 15px;
@@ -159,9 +195,7 @@
 
 /* Mebmers Team */
 
-.team {
-  margin-bottom: 85px;
-}
+
 .section-text {
   font-size: 15px;
   font-family: "Roboto", sans-serif;
@@ -283,7 +317,9 @@
   background-position: center center;
 }
 /* FOOTER  */
-
+.footer {
+  margin-top: 85px;
+}
 .footer-border {
   display: block;
   background-color: rgb(229, 229, 229);
