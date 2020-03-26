@@ -1,6 +1,6 @@
 /* FONTS */
 
-@font-face {
+/* @font-face {
   font-family: Kaushan Script;
   src: url(../fonts/kaushan/KaushanScript-Regular.ttf);
   font-family: Roboto;
@@ -9,7 +9,7 @@
   font-family: Montserrat;
   src: url(../fonts/montserrat/Montserrat-Bold.ttf);
   src: url(../fonts/montserrat/Montserrat-Regular.ttf);
-}
+} */
 
 /* HELPS */
 
@@ -144,12 +144,12 @@ a {
   background-repeat: no-repeat;
   background-position: center;
 }
-.service-item:nth-child(3n + 1) {
+/* .service-item:nth-child(3n + 1) {
   margin-left: 10px;
 }
 .service-item:nth-child(3n) {
   margin-right: 10px;
-}
+} */
 .service-icon {
   float: left;
   width: 32px;
@@ -194,7 +194,9 @@ background-image: url(../img/icons/ALARM.png);
 }
 
 /* Mebmers Team */
-
+.team {
+  padding-bottom: 85px;
+}
 
 .section-text {
   font-size: 15px;
@@ -317,9 +319,7 @@ background-image: url(../img/icons/ALARM.png);
   background-position: center center;
 }
 /* FOOTER  */
-.footer {
-  margin-top: 85px;
-}
+
 .footer-border {
   display: block;
   background-color: rgb(229, 229, 229);
