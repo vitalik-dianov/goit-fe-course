@@ -1,0 +1,194 @@
+.container {
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  align-items: baseline;
+}
+a {
+  display: block;
+}
+.section {
+  margin: 100px 0;
+}
+
+.logo {
+  font-family: "Marck Script";
+  font-size: 26px;
+  color: #fed136;
+  text-decoration: none;
+}
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 0;
+}
+.nav-item {
+  margin-right: 40px;
+}
+.nav-item:last-child {
+  margin: 0;
+}
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 2.929;
+  text-align: center;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+  transition: 0.35s;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fed136;
+  transition: 0.35s;
+}
+
+.title-services {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #222;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.875;
+  text-align: center;
+}
+.subtitle {
+  font-size: 16px;
+  font-family: "Playfair Display", serif;
+  color: #777;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.service-list {
+  display: flex;
+  justify-content: space-between;
+}
+.service-item {
+  width: 290px;
+  margin-right: 35px;
+}
+.service-item:last-child {
+  margin-right: 0;
+}
+.service-item::before {
+  content: "";
+  display: block;
+  width: 74px;
+  height: 74px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(254, 209, 54);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto 25px;
+}
+
+.icon-basket::before {
+  background-image: url(../img/icons/Icon-Basket.png);
+}
+.icon-laptop::before {
+  background-image: url(../img/icons/Icon-Laptop.png);
+}
+.icon-locked::before {
+  background-image: url(../img/icons/Icon-Locked.png);
+}
+.service-title {
+  font-size: 18px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.service-text {
+  font-size: 14px;
+  font-family: "RobotoSlab";
+  color: rgb(119, 119, 119);
+  line-height: 1.2;
+  text-align: center;
+}
+
+.contact_us {
+  background-image: url(../img/bg-map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 0;
+  padding: 100px 0;
+}
+
+.title-contact {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.875;
+  text-align: center;
+}
+.input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 209px;
+  margin-bottom: 30px;
+}
+.input,
+.txtarea {
+  box-sizing: border-box;
+  max-width: 455px;
+  width: 100%;
+  height: 50px;
+  border: 0;
+  padding-left: 20px;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #757575;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+.txtarea {
+  height: 100%;
+  margin-left: 30px;
+  padding-top: 18px;
+}
+.btn-send {
+  display: block;
+  margin: 0 auto;
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  font-family: "montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fed136;
+  border-radius: 3px;
+}
+
+[required]:not(:placeholder-shown):valid {
+  box-shadow: 0 0 0 2px #9fff50;
+  transition: 0.2s;
+}
+[required]:not(:placeholder-shown):invalid {
+  box-shadow: 0 0 0 2px #fd2f2f;
+  transition: 0.2s;
+}
