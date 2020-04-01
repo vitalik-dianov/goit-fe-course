@@ -156,10 +156,10 @@ a {
   justify-content: space-between;
 }
 .input-wrap {
-  display: flex;
+  /* display: flex; */
   width: 100%;
   max-width: 455px;
-  flex-direction: column;
+  /* flex-direction: column; */
   /* height: 209px; */
   /* margin-bottom: 30px; */
 }
