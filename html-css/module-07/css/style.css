@@ -1,9 +1,19 @@
+html {
+  box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+  box-sizing: inherit;
+  }
+
 .container {
   width: 100%;
   max-width: 970px;
   margin: 0 auto;
   padding: 0 15px;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 .header-inner {
   display: flex;
@@ -15,7 +25,7 @@ a {
   display: block;
 }
 .section {
-  margin: 100px 0;
+  padding: 100px 0;
 }
 
 .logo {
@@ -128,7 +138,7 @@ a {
   background-position: center;
   background-size: 100%;
   margin-bottom: 0;
-  padding: 100px 0;
+  
 }
 
 .title-contact {
@@ -140,21 +150,26 @@ a {
   line-height: 1.875;
   text-align: center;
 }
-.input-wrap {
+.input-pos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.input-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 455px;
   flex-direction: column;
-  height: 209px;
-  margin-bottom: 30px;
+  /* height: 209px; */
+  /* margin-bottom: 30px; */
 }
 .input,
 .txtarea {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   max-width: 455px;
   width: 100%;
   height: 50px;
-  border: 0;
+  margin-bottom: 30px;
   padding-left: 20px;
   font-family: "montserrat", sans-serif;
   font-size: 14px;
@@ -165,9 +180,12 @@ a {
   border-radius: 3px;
 }
 .txtarea {
-  height: 100%;
-  margin-left: 30px;
+  height: 210px;
+  margin-bottom: 0;
   padding-top: 18px;
+
+  /* NOT WORKING
+  height: 100%; */
 }
 .btn-send {
   display: block;
@@ -182,6 +200,7 @@ a {
   text-transform: uppercase;
   border: 1px solid #fed136;
   border-radius: 3px;
+  transition: 0.35s;
 }
 
 [required]:not(:placeholder-shown):valid {
@@ -191,4 +210,8 @@ a {
 [required]:not(:placeholder-shown):invalid {
   box-shadow: 0 0 0 2px #fd2f2f;
   transition: 0.2s;
+}
+.btn-send:hover {
+  background-color: #fdc808;
+  transition: 0.35s;
 }
