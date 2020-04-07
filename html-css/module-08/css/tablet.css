@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+.container {
+    max-width: 700px;
+}
+.header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 38px 50px 0;
+}
+.logo {
+    padding: 0;
+}
+.partner-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.partner-item {
+    width: 100%;
+    margin: 0 45px 20px;
+    max-width: 220px;
+}
+}
