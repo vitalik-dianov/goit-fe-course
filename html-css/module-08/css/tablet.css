@@ -21,4 +21,7 @@
     margin: 0 45px 20px;
     max-width: 220px;
 }
+.partner-item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
 }

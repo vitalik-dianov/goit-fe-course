@@ -1,4 +1,4 @@
-@media (min-width: 1440px) {
+@media (min-width: 960px) {
     .container {
         max-width: 942px;
     }
@@ -6,5 +6,7 @@
     .partner-item {
         margin: 0 0 20px;
     }
-   
+    .partner-item:nth-last-child(n) {
+        margin-bottom: 0;
+    }
 }
