@@ -23,7 +23,7 @@ html {
     left: 0;
     width: 100%;
     min-height: 100vh;
-    background-image: url(../../img/bg.jpg);
+    background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -158,19 +158,19 @@ html {
     background-repeat: no-repeat;
   }
   .tv-icon:after {
-    background-image: url(../../img/partners/tv.png);
+    background-image: url(../img/partners/tv.png);
     background-color: #ff4e50;
   }
   .chemistry-icon:after {
-    background-image: url(../../img/partners/chemistry.png);
+    background-image: url(../img/partners/chemistry.png);
     background-color: #ffa507;
   }
   .coffe-icon:after {
-    background-image: url(../../img/partners/coffe.png);
+    background-image: url(../img/partners/coffe.png);
     background-color: #1cd7ad;
   }
   .plane-icon:after {
-    background-image: url(../../img/partners/plane.png);
+    background-image: url(../img/partners/plane.png);
     background-color: #4e73db;
   }
   .partner-img {
