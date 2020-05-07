@@ -1,0 +1,48 @@
+.overlay-bg {
+    position: relative;
+    box-shadow: 0 0 $color-icon;
+	transition: 0.35s;
+	margin-bottom: 30px;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient( to bottom, rgba(240, 140, 138, 0.9) 0%, rgba(240, 217, 137, 0.9) 100% );
+	opacity: 0;
+	transition: 0.35s;
+}
+.team__members_card {
+	&:hover {
+		.overlay-bg {
+			transform: translate(-10px, -10px);
+			box-shadow: 10px 10px $color-icon;
+		}
+		.overlay {
+			opacity: 1;
+			transition: 0.35s;
+		}
+	}
+}
+.team__members_name {
+	margin: 0;
+	margin-bottom: 8px;
+	font-family: $ff-montserrat;
+	font-size: 14px;
+	color: $font-color-dark;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.team__members_position {
+	font-family: $ff-roboto;
+	text-align: center;
+	color: $font-color-light;
+	font-size: 15px;
+	font-style: italic;
+}

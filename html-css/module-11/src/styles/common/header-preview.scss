@@ -1,0 +1,44 @@
+.preview {
+	position: relative;
+	margin: 200px 0 104px;
+}
+.preview__desc {
+	font-family: $ff-kaushan;
+	font-size: 72px;
+	color: $font-color-header;
+	padding-bottom: 20px;
+	text-align: center;
+	font-weight: 400;
+	margin: 0 auto;
+}
+.preview__title {
+	font-family: $ff-montserrat;
+	font-size: 130px;
+	color: $font-color-header;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: 700;
+	max-width: 774px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 100px;
+}
+.preview__button {
+	display: block;
+	padding: 12px 32px;
+	border: 3px solid $font-color-header;
+	background-color: transparent;
+	color: $font-color-header;
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: $ff-montserrat;
+	margin: 0 auto;
+	cursor: pointer;
+	transition: 0.35s;
+	&:hover {
+		background-color: $font-color-header;
+		color: #f8d557;
+		transition: 0.35s;
+	}
+}

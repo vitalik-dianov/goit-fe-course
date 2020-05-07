@@ -1,0 +1,51 @@
+.footer_inner {
+	display: flex;
+	justify-content: space-between;
+	border-top: 2px solid #e5e5e5;
+}
+.footer__copy {
+	padding-top: 24px;
+	padding-bottom: 24px;
+	font-family: $ff-montserrat;
+	color: $font-color-dark;
+	font-size: 14px;
+}
+.designer_name {
+	color: $color-accent-line;
+}
+.footer__form {
+	display: flex;
+	justify-content: center;
+	font-size: 0;
+}
+.input_email {
+	font-size: 15px;
+	font-family: $ff-roboto;
+	margin: 0;
+	padding: 0;
+	width: 231px;
+	height: 41px;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	padding-left: 14px;
+}
+.footer__button-subscribe {
+	margin: 0;
+	padding: 0;
+	width: 151px;
+	height: 41px;
+	background-color: $color-icon;
+	border: none;
+	margin-top: 12px;
+	margin-bottom: 12px;
+	color: $font-color-header;
+	font-size: 14px;
+	cursor: pointer;
+	font-family: $ff-montserrat;
+	font-weight: 700;
+	transition: 0.35s;
+	&:hover {
+		background-color: $color-accent-line;
+		transition: 0.35s;
+	}
+}

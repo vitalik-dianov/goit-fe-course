@@ -1,0 +1,46 @@
+@import "../../local_modules/normalize.css/normalize";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    display: block;
+	text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+	width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.services {
+	padding-top: 50px;
+}
+.team {
+	padding-bottom: 80px;
+}
+.hidden-mean {
+	display: none;
+}

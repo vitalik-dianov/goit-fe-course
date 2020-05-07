@@ -1,0 +1,25 @@
+header.header
+  .container
+    .header__inner
+      a.header__logo(href="#logo") MoGo
+      nav.header__nav
+        ul.header__nav_list
+          li.header__nav_item
+            a.header__nav_link(href="") about
+          li.header__nav_item
+            a.header__nav_link(href="") service
+          li.header__nav_item
+            a.header__nav_link(href="") work
+          li.header__nav_item
+            a.header__nav_link(href="") blog
+          li.header__nav_item
+            a.header__nav_link(href="") contact
+          li.header__nav_item
+            a.header__nav_link(href="")
+              svg.header__nav_icon(width="16" height="16")
+                use(href="img/sprite/sprite.svg#icon-cart")
+          li.header__nav_item
+            a.header__nav_link(href="")
+              svg.header__nav_icon(width="16" height="16")
+                use(href="img/sprite/sprite.svg#icon-search")
+  include ../includes/index/preview
